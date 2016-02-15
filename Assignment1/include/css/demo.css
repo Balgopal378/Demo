@@ -1,0 +1,39 @@
+.superwrap{
+  background-color: #666;
+}
+.logo{
+  float:left;
+  width:150px;
+  height:80px;
+  margin-top: 10px;
+  position: relative;
+  top: -10px;
+}
+#wrap{
+  background-color: yellow;
+  position: relative;
+  height: 80px;
+}
+#nav{
+  text-align: right;
+  margin-top: 25px;
+  position: absolute;
+  top: 10px;
+  left: 500px;
+}
+#nav ul li{
+  display: inline;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: right;
+  text-decoration-style: solid;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+
+}
+a{
+  text-decoration: none;
+}

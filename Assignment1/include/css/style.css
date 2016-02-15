@@ -1,0 +1,190 @@
+/*common header and navigation*/
+  body{
+    background-image: url("../images/transperent.jpg");
+    background-size: cover;
+  }
+  header{
+    background-color:#4e4e32;
+  }
+  .container_12{
+    background-color:  #e1e1d0;
+  }
+  nav ul li{
+    display: inline;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: right;
+    text-decoration: none;
+  }
+  nav ul li ul{
+  position: absolute;
+  display: none;
+  width: 150px;
+  top: 30px;
+  left: 250px;
+  }
+  nav ul li:hover ul{
+    display: block;
+    background-color: #adad85;
+  }
+  nav ul li a{
+    color: white;
+  }
+  nav{
+    position: relative;
+    top:20px;
+    left:500px;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  a{
+    text-decoration: none;
+  }
+  .logo{
+    width:150px;
+    height:80px;
+    position: relative;
+    left:0px;
+    margin-left: -10px;
+  }
+  /*hero element*/
+  .hero{
+    width:818px;
+    height: 395px;
+    margin-top: 12px;
+    margin-left: 60px;
+  }
+  .hero:hover{
+    width:822px;
+    height: 400px;
+  }
+  .hero1{
+    margin-top: 20px;
+    width:100%;
+    height: 550px;
+    background-image: url("../images/hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  q{
+    z-index: 999;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -760px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px yellow;
+  }
+  /*three segment section for index.html*/
+  .threeseg{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+  }
+  .threesegImg{
+    width: inherit;
+    position: relative;
+  }
+  .threeseg p,h3{
+    padding-top: 10px;
+    margin-left: 0px;
+    text-align: justify;
+    font-family: 'Poiret One', cursive;
+  }
+  /*article section*/
+  aside h2{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+  }
+  aside p{
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .firstarticle p{
+    margin-left: 0px;
+  }
+  .secondarticle h2{
+    margin-left: 20px;
+  }
+  .articleImg1 img{
+    float: right;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 100px;
+   margin-top: 70px;
+  }
+  .articleImg2 img{
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 100px;
+   margin-top: 70px;
+  }
+  .secondarticle{
+    margin-bottom: 50px;
+  }
+    /*threesegment section for portfolio.html*/
+  .mar img{
+    height: 200px;
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+  .mar h2,p{
+    margin-left: 24px;
+  }
+
+  .logos{
+    width: 30px;
+    height: 30px;
+  }
+  .superwrap{
+    margin-top: 30px;
+  }
+  .mar:hover{
+    background-color: #c2c2a3;
+  }
+  .addCart img{
+    height: 40px;
+    width: 40px;
+    margin-left: -4px;
+    margin-top: -5px;
+  }
+  .mar{
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+/*common footer element*/
+  .foot1{
+    background-color: #404040;
+    padding-top: 20px;
+    color: white;
+    float: left;
+  }
+  .foot2{
+    background-color: #404040;
+    padding-top: 20px;
+    color: white;
+  }
+  .foot1 p{
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #ffff99;
+    margin-bottom: 20px;
+  }
+  #para{
+    margin-left: 20px;
+
+  }
+  .superfoot{
+    background-color: #404040;
+    margin-top: 20px;
+  }
+
+  .foot2{
+  float: right;
+  }

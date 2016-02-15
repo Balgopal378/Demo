@@ -1,0 +1,7 @@
+body{
+  background: #666;
+}
+ul li{
+display: inline;
+color: red;
+}
