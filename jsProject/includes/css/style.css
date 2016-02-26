@@ -1,0 +1,103 @@
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.rect{
+  fill:blue;
+}
+
+.d3-tip {
+line-height: 1;
+font-weight: bold;
+padding: 12px;
+background: rgba(0, 0, 0, 0.8);
+color: #fff;
+border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+box-sizing: border-box;
+display: inline;
+font-size: 10px;
+width: 100%;
+line-height: 1;
+color: rgba(0, 0, 0, 0.8);
+content: "\25BC";
+position: absolute;
+text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+margin: -1px 0 0 0;
+top: 100%;
+left: 0;
+}
+
+.navig{
+       padding: 20px;
+     }
+
+     .mainLogo{
+       height: 100px;
+       padding: 0px;
+     }
+
+     .mainLogo img{
+       width: 150px;
+       height: 100px;
+     }
+
+     #search{
+       width: 110px;
+     }
+
+     .navbar{
+       background-color: #2C3E50;
+       border-color: #FFFFFF;
+       color: #FFFFFF;
+     }
+
+     .navbar .navbar-nav >li >a {
+       color: yellow;
+     }
+
+     .navbar .navbar-nav >.active >a,
+     .navbar .navbar-nav >.active >a:hover,
+     .navbar .navbar-nav >.active >a:focus{
+       color: #blue;
+       background-color: #1A242F;
+     }
+
+     .navbar .navbar-nav >li >a,
+     .navbar .navbar-nav >li >a:hover,
+     .navbar .navbar-nav >li >a:focus{
+       color: #18BC9C;
+       background-color: transparent;
+     }
+
+     .navbar .navbar-nav >.open >a,
+     .navbar .navbar-nav >.open >a:hover,
+     .navbar .navbar-nav >.open >a:focus{
+       background-color: #1A242F;
+       color: #ffff4d;
+     }

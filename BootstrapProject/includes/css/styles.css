@@ -1,0 +1,338 @@
+  /*
+
+  My Custom CSS
+  =============
+
+  Author:  Balgopal
+  Updated: Feb, 2016
+  Notes:	 Hand coded
+
+  */
+
+  body{
+    background-image: url(../../images/wallpaper2.jpg);
+    background-size: cover;
+  }
+  .alert{
+    display: none;
+    margin-top: 20px;
+  }
+
+  .feature{
+    text-align: center;
+    margin-top: 40px;
+    transition: all 0.3s ease 0s;
+  }
+  .feature:hover{
+    transform: scale(1.1);
+  }
+  .tab-content p{
+    margin-top: 10px;
+    text-align: justify;
+  }
+
+  #tab2 img{
+    width: 100%;
+    margin: 0 10px 10px 0px;
+  }
+  /* --------------------------------------
+     Layout
+     -------------------------------------- */
+
+     .unstyled li{
+       list-style: none;
+       display: inline;
+       font-size: 3em;
+     }
+     .unstyled{
+       padding-left: 0px;
+     }
+
+
+  /* --------------------------------------
+     Navbar
+     -------------------------------------- */
+     .navig{
+       padding: 20px;
+     }
+
+     .mainLogo{
+       height: 100px;
+       padding: 0px;
+     }
+
+     .mainLogo img{
+       width: 150px;
+       height: 100px;
+     }
+
+     #search{
+       width: 110px;
+     }
+
+     .navbar{
+       background-color: #2C3E50;
+       border-color: #FFFFFF;
+       color: #FFFFFF;
+     }
+
+     .navbar .navbar-nav >li >a {
+       color: yellow;
+     }
+
+     .navbar .navbar-nav >.active >a,
+     .navbar .navbar-nav >.active >a:hover,
+     .navbar .navbar-nav >.active >a:focus{
+       color: #blue;
+       background-color: #1A242F;
+     }
+
+     .navbar .navbar-nav >li >a,
+     .navbar .navbar-nav >li >a:hover,
+     .navbar .navbar-nav >li >a:focus{
+       color: #18BC9C;
+       background-color: transparent;
+     }
+
+     .navbar .navbar-nav >.open >a,
+     .navbar .navbar-nav >.open >a:hover,
+     .navbar .navbar-nav >.open >a:focus{
+       background-color: #1A242F;
+       color: #ffff4d;
+     }
+
+    .navbar-nav  .dropdown-menu{
+      background-color: #008080;
+    }
+    .nav .button{
+      overflow-x: hidden;
+    }
+
+    .navbar-toggle .icon-bar{
+      background-color: aqua;
+    }
+
+    .dropdown-header {
+      color: white;
+    }
+  /* --------------------------------------
+     Carousel
+     -------------------------------------- */
+     #mycarouselSlide{
+       margin-top: 130px;
+     }
+     #mycarouselSlide img{
+       width: 100%;
+
+     }
+
+  /* --------------------------------------
+     Tab section
+     -------------------------------------- */
+    #tabSection .nav-tabs {
+      border-bottom: 2px solid #DDD;
+    }
+
+    #tabSection .nav-tabs > li > a {
+      border: none;
+      color: #666;
+    }
+
+    #tabSection .nav-tabs > li.active > a,
+    .nav-tabs > li > a:hover {
+      border: none;
+      color: #4285F4 !important;
+      background: transparent;
+     }
+
+    #tabSection .nav-tabs > li > a::after {
+      content: "";
+      background: #4285F4;
+      height: 2px;
+      position: absolute;
+      width: 100%; left: 0px; bottom: -1px;
+      transition: all 250ms ease 0s;
+      transform: scale(0);
+     }
+
+    #tabSection .nav-tabs > li.active > a::after,
+    .nav-tabs > li:hover > a::after {
+      transform: scale(1);
+    }
+
+    #tabSection  .nav-tabs > li > a::after {
+      background: #21527d none repeat scroll 0% 0%;
+      color: #fff;
+    }
+
+    #tabSection .tab-pane {
+      padding: 15px 0;
+    }
+    #tabSection .tab-content{
+      padding:20px
+    }
+
+    .card-container {
+      background: #FFF none repeat scroll 0% 0%;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      margin-bottom: 30px;
+      height: 100%;
+      overflow-y: auto;
+     }
+
+     .navbar-fixed-top .navbar-collapse {
+      max-height: 800px;
+  }
+  /* --------------------------------------
+     Media Queries
+     -------------------------------------- */
+
+  /* Portrait & landscape phone */
+  @media (max-width: 480px) {
+    #card img{
+      width: 100%;
+     height: 200px;
+    }
+
+    .card3d img{
+      width: 70px;
+      height: 100px;
+    }
+
+    .navig{
+      width: 100%;
+      height: 150%;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+      background-color: #008080;
+    }
+
+    #searchHere{
+      visibility: hidden;
+    }
+
+  }
+
+  /* Landscape phone to portrait tablet */
+  @media (max-width: 768px) {
+    #mycarouselSlide img{
+      width: 100%;
+     height: 300px;
+    }
+
+    .card3d img{
+      width: 120px;
+      height: 180px;
+    }
+    .navbar-nav .open .dropdown-menu {
+      background-color: #008080;
+    }
+
+    #searchHere{
+      visibility: hidden;
+    }
+
+    
+  }
+
+  /* Large desktop */
+  @media (min-width: 1200px) {
+    #mycarouselSlide img{
+      width: 100%;
+     height: 500px;
+    }
+
+  .card3d img{
+    width: 150px;
+    height: 200px;
+  }
+
+  }
+
+  /* --------------------------------------
+     bigCallOut area
+     -------------------------------------- */
+
+  #bigCallOut{
+    margin-top: 20px;
+  }
+
+  .feature .panel p{
+    margin-top: 10px;
+    text-align: justify;
+  }
+
+  .feature .panel-heading{
+    background-color: #009999;
+  }
+
+  .panel .btn-warning{
+    background-color: darkred;
+  }
+
+  .portfolioPanel{
+    margin-top: 130px;
+  }
+
+  .imagesPort{
+    width: 100%;
+    height: 300px;
+  }
+
+
+  /* --------------------------------------
+     Flipping
+     -------------------------------------- */
+  .card3d {
+    width: 200px;
+    height: 260px;
+    position: relative;
+    perspective: 800px;
+  }
+
+  #card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+
+  #card figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  #card .back {
+    transform: rotateY( 180deg );
+  }
+
+  #card {
+    transform-origin: right center;
+  }
+
+  #card:hover {
+    transform: translateX( -100% ) rotateY( -180deg );
+  }
+
+  /* --------------------------------------
+     Footer
+     -------------------------------------- */
+  .containerFoot{
+    background-color: #3d5c5c;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    color: white;
+  }
+
+    .fa-rss{
+      color: orange;
+    }
