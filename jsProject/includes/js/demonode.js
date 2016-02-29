@@ -4,7 +4,6 @@
      if (err) {
          return console.error(err);
      }
-    // console.log("Asynchronous read: " + data.toString());
 
     var currentLine=[];
     var headerLine=[];
@@ -47,29 +46,20 @@
     riceProductionObj={x:year[1],AP:0,KA:0,KL:0,TN:0};
     riceProductionArrayObj.push(riceProductionObj);
 }
-//console.log(commercialCropsArrayObj);
-// commercial(commercialCropsArrayObj);
-// riceProduction(riceProductionArrayObj);
-
-
 
   function commercial(){
    return commercialCropsArrayObj;
   }
 
 
-
   function riceProduction(){
     return riceProductionArrayObj;
   }
 
-
   var arr=commercial();
   var rice=riceProduction();
 
-
     for(var i=1;i<currentLine.length-1;i++)
-
       {
         colView =currentLine[i].match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
         var lenOfCol = [];
@@ -91,14 +81,12 @@
         var conditionRabi = lenOfCol.indexOf("Rabi");
           if( (lenOfCol.length>4) && (conditionThree > -1) && (conditionOne==conditionTwo))
             {
-            //  console.log(colView[0]);
               if((conditionKharif > -1) || (conditionRabi > -1))
                   {
                       var temp = colView[0].substring(34);
                       objFoodgrains=
                       {x:temp,
                         y:parseFloat(colView[23])};
-                      //  console.log(objFoodgrains);
                         objArrayFoodgrains.push(objFoodgrains);
                   }
             }
@@ -106,8 +94,7 @@
 
       /*Aggrgregate*/
       if((lenOfCol.length<=5) && (lenOfCol.indexOf("Commercial")> -1)){
-        //console.log(colView[0]);
-        //console.log(i);
+
         for(var l=3;l<headerLine.length;l++){
 
           if(colView[l]==='NA'){
@@ -126,50 +113,23 @@
     if(colView[k].trim()==='NA'){
       colView[k]=0;
     }
-    //console.log(rice);
+
     for(var g=0;g<lookUp.length;g++)
     {
       if(colView[0].indexOf(lookUp[g])> -1){
-      //  console.log(colView[k]);
         rice[k-3][lookUp[g+1]]=parseFloat(colView[k]);
       }
     }
 
-    /*if(colView[0].indexOf("Andhra Pradesh")> -1){
-      //console.log(riceProductionArrayObj);
 
-     rice[k-3].AP=parseFloat(colView[k]);
-    }
-
-    if(colView[0].indexOf("Karnataka")> -1){
-      //console.log(riceProductionArrayObj);
-
-     rice[k-3].KA=parseFloat(colView[k]);
-    }
-
-    if(colView[0].indexOf("Kerala")> -1){
-      //console.log(riceProductionArrayObj);
-
-     rice[k-3].KL=parseFloat(colView[k]);
-    }
-
-    if(colView[0].indexOf("Tamil Nadu")> -1){
-      //console.log(riceProductionArrayObj);
-
-     rice[k-3].TN=parseFloat(colView[k]);
-   }*/
   }
   }
 
-
     }
-    //console.log(colView);
-    //result.push(arr);
+
     objArrayOil.sort(function(a, b){return b.y-a.y});
     objArrayFoodgrains.sort(function(a, b){return b.y-a.y});
-    //console.log(objArrayFoodgrains);
-    //console.log(arr);
-    //console.log(rice);
+
     createJson(rice,"riceProduction");
     createJson(arr,"aggrgregateCommercial");
     createJson(objArrayOil,"Oilseeds");
